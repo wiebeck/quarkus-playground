@@ -1,4 +1,4 @@
-# yet-another-quarkus-repo Project
+# quarkus-playground Project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
