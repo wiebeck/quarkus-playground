@@ -44,8 +44,8 @@ public class RiegeB2CJWTCallerPrincipalFactory extends JWTCallerPrincipalFactory
     @ConfigProperty(name = "riege.b2c.tenant-id")
     String b2cTenantId;
 
-    @ConfigProperty(name = "riege.b2c.app.client-id")
-    String b2cAppClientId;
+    @ConfigProperty(name = "riege.b2c.application.id")
+    String b2cAppId;
 
     private MyJWTAuthContextInfo personalAuthContext;
     private MyJWTAuthContextInfo appAuthContext;
@@ -67,7 +67,7 @@ public class RiegeB2CJWTCallerPrincipalFactory extends JWTCallerPrincipalFactory
             String.format("https://login.microsoftonline.com/%s/v2.0", b2cTenantId));
         appAuthContext.setPublicKeyLocation(
             String.format("https://login.microsoftonline.com/%s/discovery/v2.0/keys", b2cTenantId));
-        appAuthContext.setExpectedAudience(Set.of(b2cAppClientId));
+        appAuthContext.setExpectedAudience(Set.of(b2cAppId));
     }
 
     @Override
