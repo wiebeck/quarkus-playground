@@ -10,4 +10,4 @@ pluginManagement {
         id(quarkusPluginId) version quarkusPluginVersion
     }
 }
-rootProject.name="yet-another-quarkus-repo"
+rootProject.name="quarkus-playground"
